@@ -15,3 +15,5 @@ This is a microservice system for car auction.
 ### System architecture
 
 Find the system architecture [here](https://drive.google.com/drive/folders/13qYeDb50eu8szu-vdnrd7jnDWvNIypOt?usp=drive_link)
+
+## NB. The system is not yet complete 
