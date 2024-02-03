@@ -16,6 +16,10 @@ This is a microservice system for car auction.
 
 Find the system architecture [here](https://drive.google.com/drive/folders/13qYeDb50eu8szu-vdnrd7jnDWvNIypOt?usp=drive_link)
 dotnet watch run --urls="http://localhost:7001" auction service
+
 dotnet watch run --urls="http://localhost:7002" search service
+
+dotnet watch run --urls="http://localhost:6001"
+Gateway service
 
 ## NB. The system is not yet complete 
