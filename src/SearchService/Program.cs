@@ -25,6 +25,12 @@ builder.Services.AddMassTransit(x =>
             e.ConfigureConsumer<AuctionCreatedConsumer>(context);
         });
 
+        cfg.Host(builder.Configuration["RabbitMq:Host"],"/", host =>
+        {
+            host.Username(builder.Configuration.GetValue("RabbitMq:Username", "guest"));
+            host.Password(builder.Configuration.GetValue("RabitMq:Password", "guest"));
+        });
+
         cfg.ConfigureEndpoints(context);
     });
 });
